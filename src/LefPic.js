@@ -25,8 +25,9 @@ class LeftPic extends React.Component {
         <div id="leftbox">
           <div id="date">
             <SelectDate text='Start Date' start="2019-05-24" />
-            <DatePicker text='Start Date' start="2019-05-24" /> <br /><br />
-            <DatePicker text='End Date' start={this.state.date} />
+            <SelectDate text='Start Date' start={this.state.date} />
+            {/* <DatePicker text='Start Date' start="2019-05-24" /> <br /><br />
+            <DatePicker text='End Date' start={this.state.date} /> */}
           </div>
           <div>
             <Dropdown value={this.state.data} />
