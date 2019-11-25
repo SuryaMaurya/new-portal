@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Input from './Component/Input';
+import ClientName from './Component/ClientName';
+import SelectAll from './Component/SelectAll';
 import './App.css';
 
 class NavBar extends React.Component {
@@ -8,8 +10,17 @@ class NavBar extends React.Component {
         return (
             <>
                 <div class="topnav">
-                    <Input text="text" name="complaint_source" header="This is Complaint" /><br />
+                    <div class="clientname">
+                        <ClientName text="CxP Demo" />
+
+                    </div>
+                    <div class='Search_Box'>
+                        <SelectAll /><Input text="text" name="Search..." />
+                        
+                    </div>
+                   
                 </div>
+
             </>
         )
 

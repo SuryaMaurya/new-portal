@@ -9,7 +9,7 @@ class Input extends React.Component {
   }
   render() {
     return (
-      <div class='Search_Box'>
+      <div >
         <form onSubmit={this.submit}>
           {/* <h1 align='center'>Input of {this.props.header}</h1> */}
           <input type={this.props.text} placeholder={this.props.name} ref={this.userInput} required />
